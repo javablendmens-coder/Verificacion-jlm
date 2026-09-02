@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificación JLM</title>
+  <style>
+    body {
+      background-color: #08080c;
+      color: #e5e5e5;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .card {
+      background: #111116;
+      border: 1px solid #2a2a35;
+      border-radius: 24px;
+      padding: 24px;
+      max-width: 360px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    }
+    .product-image {
+      width: 100%;
+      max-height: 420px;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      border: 1px solid #2a2a35;
+      background: #000;
+    }
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(212, 175, 55, 0.12);
+      color: #d4af37;
+      border: 1px solid #d4af37;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .counter-box {
+      background: rgba(212, 175, 55, 0.05);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 14px;
+      padding: 18px;
+    }
+    .counter-label {
+      font-size: 0.75rem;
+      color: #9999aa;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .counter-number {
+      color: #d4af37;
+      font-weight: bold;
+      font-size: 2.2rem;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="product-image">
+      <img src="playera.jpg" alt="Playera Java Blend Men">
+    </div>
+
+    <div class="badge">&#10003; PRODUCTO AUTÉNTICO DE JLM</div>
+
+    <div class="counter-box">
+      <div class="counter-label">Número de Escaneos</div>
+      <div class="counter-number" id="scan-count">1</div>
+    </div>
+  </div>
+
+</body>
+</html>
+
